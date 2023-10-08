@@ -4,4 +4,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  .imgsize{
+    width: 4rem;
+  }
+  .txt{
+    font-size: 10px;
+  }
 }

@@ -1,3 +1,4 @@
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -10,14 +11,16 @@ import "./App.css";
 function App() {
   return (
     <div>
+     
+
       <NavBar />
       <Home />
       <About />
       <Portfolio />
-      <Experience/>
-      <Contact/>
-
+      <Experience />
+      <Contact />
       <SocialLinks />
+     
     </div>
   );
 }

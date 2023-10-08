@@ -12,31 +12,43 @@ const Portfolio = () => {
       id: 1,
       src: dashboard,
       projname: "Business dashboard",
+      demoLink: "https://omoinew-dashboard.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
     },
     {
       id: 2,
       src: fitclub,
       projname: "Fitclub",
+      demoLink: "https://fitclubshubho.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/FitClub",
     },
     {
       id: 3,
       src: redux,
       projname: "REDUX Food Store",
+      demoLink: "https://redux-ecommerce.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
     },
     {
       id: 4,
       src: shoper,
       projname: "Shopperz",
+      demoLink: "https://shopping-api.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Shoperz",
     },
     {
       id: 5,
       src: thread,
       projname: "Threads Clone",
+      demoLink: "https://threads-app-lac-tau.vercel.app/",
+      codeLink: "https://github.com/Shubhodeep100/Threads_App",
     },
     {
       id: 6,
       src: todo,
       projname: "Todo Application",
+      demoLink: "https://to-doapplication.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Todo-app",
     },
   ];
 
@@ -53,8 +65,8 @@ const Portfolio = () => {
           <p className="py-6 text-xl">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, projname }) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:pr-0 items-center justify-center">
+          {portfolios.map(({ id, src, projname, demoLink, codeLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -66,13 +78,24 @@ const Portfolio = () => {
                   {projname}
                 </span>
               </p>
+
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 m-4 duration-200 hover:scale-105">
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6  m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={codeLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6  m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
