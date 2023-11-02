@@ -5,6 +5,7 @@ import redux from "../assets/port/reduxShop.jpg";
 import shoper from "../assets/port/shopperz.jpg";
 import thread from "../assets/port/threadC.jpg";
 import todo from "../assets/port/todo.jpg";
+import gqlproj from '../assets/port/gqlproj.jpg'
 
 const Portfolio = () => {
   const portfolios = [
@@ -49,6 +50,12 @@ const Portfolio = () => {
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
+    },
+    {
+      id: 7,
+      src: gqlproj,
+      projname: "Project Management System",
+      codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
     },
   ];
 

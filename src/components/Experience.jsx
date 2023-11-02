@@ -11,6 +11,7 @@ import post from "../assets/postgre.png";
 import react from "../assets/react.png";
 import tailcss from "../assets/tailwind.png";
 import redux from "../assets/redux.png";
+import graphQL from "../assets/gql.png"
 
 const Experience = () => {
   const techs = [
@@ -83,6 +84,12 @@ const Experience = () => {
     },
     {
       id: 12,
+      src: graphQL,
+      title: "GraphQL",
+      style: "shadow-pink-500",
+    },
+    {
+      id: 13,
       src: github,
       title: "GitHub",
       style: "shadow-gray-200",
