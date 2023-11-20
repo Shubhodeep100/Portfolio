@@ -11,7 +11,9 @@ import post from "../assets/postgre.png";
 import react from "../assets/react.png";
 import tailcss from "../assets/tailwind.png";
 import redux from "../assets/redux.png";
-import graphQL from "../assets/gql.png"
+import graphQL from "../assets/gql.png";
+import jqery from "../assets/jquery.png";
+import jest from "../assets/jest.png";
 
 const Experience = () => {
   const techs = [
@@ -48,48 +50,60 @@ const Experience = () => {
     },
     {
       id: 6,
+      src: jqery,
+      title: "JQuery",
+      style: "shadow-blue-700 icon-bigger",
+    },
+    {
+      id: 7,
       src: react,
       title: "ReactJS",
       style: "shadow-blue-400",
     },
     {
-      id: 7,
+      id: 8,
       src: redux,
       title: "REDUX",
       style: "shadow-violet-700",
     },
     {
-      id: 8,
+      id: 9,
+      src: jest,
+      title: "Jest",
+      style: "shadow-rose-700",
+    },
+    {
+      id: 10,
       src: next,
       title: "NextJS",
       style: "shadow-white",
     },
     {
-      id: 9,
+      id: 11,
       src: mongo,
       title: "MongoDB",
       style: "shadow-green-700",
     },
     {
-      id: 10,
+      id: 12,
       src: post,
       title: "PostgreSQL",
       style: "shadow-blue-700",
     },
     {
-      id: 11,
+      id: 13,
       src: node,
       title: "NodeJS",
       style: "shadow-green-500",
     },
     {
-      id: 12,
+      id: 14,
       src: graphQL,
       title: "GraphQL",
       style: "shadow-pink-500",
     },
     {
-      id: 13,
+      id: 15,
       src: github,
       title: "GitHub",
       style: "shadow-gray-200",
@@ -115,7 +129,17 @@ const Experience = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 imgsize mx-auto" />
+              <img
+                src={src}
+                alt=""
+                className={`w-20 imgsize mx-auto ${
+                  title === "JQuery"
+                    ? "w-24 h-24"
+                    : title === "Jest"
+                    ? "w-24 h-24"
+                    : ""
+                }  `}
+              />
               <p className="mt-4 txt">{title}</p>
             </div>
           ))}
