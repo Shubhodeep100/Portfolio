@@ -5,14 +5,15 @@ import redux from "../assets/port/reduxShop.jpg";
 import shoper from "../assets/port/shopperz.jpg";
 import thread from "../assets/port/threadC.jpg";
 import todo from "../assets/port/todo.jpg";
-import gqlproj from '../assets/port/gqlproj.jpg'
+import gqlproj from '../assets/port/gqlproj.jpg';
+import customer from '../assets/port/customer.jpg'
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: dashboard,
-      projname: "Business dashboard",
+      projname: "Business Dashboard",
       demoLink: "https://omoinew-dashboard.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
     },
@@ -25,34 +26,41 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      src: customer,
+      projname: "Customer Dashboard",
+      demoLink: "https://customer-dashboard-971.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
+    },
+    {
+      id: 4,
       src: redux,
       projname: "REDUX Food Store",
       demoLink: "https://redux-ecommerce.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
     },
     {
-      id: 4,
+      id: 5,
       src: shoper,
       projname: "Shopperz",
       demoLink: "https://shopping-api.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Shoperz",
     },
     {
-      id: 5,
+      id: 6,
       src: thread,
       projname: "Threads Clone",
       demoLink: "https://threads-app-lac-tau.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Threads_App",
     },
     {
-      id: 6,
+      id: 7,
       src: todo,
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
     },
     {
-      id: 7,
+      id: 8,
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
