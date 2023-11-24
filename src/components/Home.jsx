@@ -15,7 +15,7 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 pr-2 text-lg">
-            I have experince with building and designing web applications.
+            I have experience with building and designing web applications.
             Currently, I love to work on web applications using technologies
             like ReactJs, TailwindCSS, NextJS & MongoDB.
           </p>
