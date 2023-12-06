@@ -6,7 +6,8 @@ import shoper from "../assets/port/shopperz.jpg";
 import thread from "../assets/port/threadC.jpg";
 import todo from "../assets/port/todo.jpg";
 import gqlproj from '../assets/port/gqlproj.jpg';
-import customer from '../assets/port/customer.jpg'
+import customer from '../assets/port/customer.jpg';
+import calblog from '../assets/port/calblog.jpg'
 
 const Portfolio = () => {
   const portfolios = [
@@ -64,6 +65,13 @@ const Portfolio = () => {
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
+    },
+    {
+      id: 9,
+      src: calblog,
+      projname: "Calendar Blog App",
+      demoLink: "https://calender-blog.vercel.app/",
+      codeLink: "https://github.com/Shubhodeep100/CalenderBlog",
     },
   ];
 
