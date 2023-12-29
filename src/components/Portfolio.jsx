@@ -7,7 +7,8 @@ import thread from "../assets/port/threadC.jpg";
 import todo from "../assets/port/todo.jpg";
 import gqlproj from '../assets/port/gqlproj.jpg';
 import customer from '../assets/port/customer.jpg';
-import calblog from '../assets/port/calblog.jpg'
+import calblog from '../assets/port/calblog.jpg';
+import netflix from '../assets/port/netflix.jpg';
 
 const Portfolio = () => {
   const portfolios = [
@@ -72,6 +73,14 @@ const Portfolio = () => {
       projname: "Calendar Blog App",
       demoLink: "https://calender-blog.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/CalenderBlog",
+    },
+    {
+      id: 10,
+      src: netflix,
+      projname: "Netflix Clone",
+      demoLink:
+        "https://vercel.com/shubhodeep100/netflix-clone/3RAeW2RYV2HBPahGKcvPMHMKsS7J",
+      codeLink: "https://github.com/Shubhodeep100/Netflix_Clone",
     },
   ];
 
