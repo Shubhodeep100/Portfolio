@@ -9,78 +9,87 @@ import gqlproj from '../assets/port/gqlproj.jpg';
 import customer from '../assets/port/customer.jpg';
 import calblog from '../assets/port/calblog.jpg';
 import netflix from '../assets/port/netflix.jpg';
+import ecom from '../assets/port/ecom.jpg'
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: dashboard,
-      projname: "Business Dashboard",
-      demoLink: "https://omoinew-dashboard.pages.dev/",
-      codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
-    },
-    {
-      id: 2,
-      src: fitclub,
-      projname: "Fitclub",
-      demoLink: "https://fitclubshubho.pages.dev/",
-      codeLink: "https://github.com/Shubhodeep100/FitClub",
-    },
-    {
-      id: 3,
-      src: customer,
-      projname: "Customer Dashboard",
-      demoLink: "https://customer-dashboard-971.pages.dev/",
-      codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
-    },
-    {
-      id: 4,
-      src: redux,
-      projname: "REDUX Food Store",
-      demoLink: "https://redux-ecommerce.pages.dev/",
-      codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
-    },
-    {
-      id: 5,
-      src: shoper,
-      projname: "Shopperz",
-      demoLink: "https://shopping-api.pages.dev/",
-      codeLink: "https://github.com/Shubhodeep100/Shoperz",
-    },
-    {
-      id: 6,
       src: thread,
       projname: "Threads Clone",
       demoLink: "https://threads-app-lac-tau.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Threads_App",
     },
     {
+      id: 2,
+      src: ecom,
+      projname: "NEXT Ecommerce",
+      demoLink: "https://next-ecommerce-shop-rho.vercel.app/",
+      codeLink: "https://github.com/Shubhodeep100/NEXT-EcommerceShop",
+    },
+    {
+      id: 3,
+      src: netflix,
+      projname: "Netflix Clone",
+      demoLink:
+        "https://vercel.com/shubhodeep100/netflix-clone/3RAeW2RYV2HBPahGKcvPMHMKsS7J",
+      codeLink: "https://github.com/Shubhodeep100/Netflix_Clone",
+    },
+    {
+      id: 4,
+      src: fitclub,
+      projname: "Fitclub",
+      demoLink: "https://fitclubshubho.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/FitClub",
+    },
+    {
+      id: 5,
+      src: dashboard,
+      projname: "Business Dashboard",
+      demoLink: "https://omoinew-dashboard.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
+    },
+    {
+      id: 6,
+      src: customer,
+      projname: "Customer Dashboard",
+      demoLink: "https://customer-dashboard-971.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
+    },
+    {
       id: 7,
+      src: redux,
+      projname: "REDUX Food Store",
+      demoLink: "https://redux-ecommerce.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
+    },
+    {
+      id: 8,
+      src: shoper,
+      projname: "Shopperz",
+      demoLink: "https://shopping-api.pages.dev/",
+      codeLink: "https://github.com/Shubhodeep100/Shoperz",
+    },
+
+    {
+      id: 9,
       src: todo,
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
     },
     {
-      id: 8,
+      id: 10,
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
     },
     {
-      id: 9,
+      id: 11,
       src: calblog,
       projname: "Calendar Blog App",
       demoLink: "https://calender-blog.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/CalenderBlog",
-    },
-    {
-      id: 10,
-      src: netflix,
-      projname: "Netflix Clone",
-      demoLink:
-        "https://vercel.com/shubhodeep100/netflix-clone/3RAeW2RYV2HBPahGKcvPMHMKsS7J",
-      codeLink: "https://github.com/Shubhodeep100/Netflix_Clone",
     },
   ];
 
