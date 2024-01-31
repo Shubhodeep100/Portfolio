@@ -14,6 +14,7 @@ import redux from "../assets/redux.png";
 import graphQL from "../assets/gql.png";
 import jqery from "../assets/jquery.png";
 import jest from "../assets/jest.png";
+import typescript from "../assets/typescript.png"
 
 const Experience = () => {
   const techs = [
@@ -47,6 +48,12 @@ const Experience = () => {
       src: javas,
       title: "JavaScript",
       style: "shadow-yellow-500",
+    },
+    {
+      id: 5,
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue-500",
     },
     {
       id: 6,
