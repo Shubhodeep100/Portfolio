@@ -15,6 +15,7 @@ import graphQL from "../assets/gql.png";
 import jqery from "../assets/jquery.png";
 import jest from "../assets/jest.png";
 import typescript from "../assets/typescript.png"
+import supabase from "../assets/supabase.png"
 
 const Experience = () => {
   const techs = [
@@ -59,7 +60,7 @@ const Experience = () => {
       id: 6,
       src: jqery,
       title: "JQuery",
-      style: "shadow-blue-700 icon-bigger",
+      style: "shadow-blue-500 icon-bigger",
     },
     {
       id: 7,
@@ -96,6 +97,12 @@ const Experience = () => {
       src: post,
       title: "PostgreSQL",
       style: "shadow-blue-700",
+    },
+    {
+      id: 12,
+      src: supabase,
+      title: "Supabase",
+      style: "shadow-green-400",
     },
     {
       id: 13,

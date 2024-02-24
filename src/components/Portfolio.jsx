@@ -9,7 +9,8 @@ import gqlproj from '../assets/port/gqlproj.jpg';
 import customer from '../assets/port/customer.jpg';
 import calblog from '../assets/port/calblog.jpg';
 import netflix from '../assets/port/netflix.jpg';
-import ecom from '../assets/port/ecom.jpg'
+import ecom from '../assets/port/ecom.jpg';
+import merlin from '../assets/port/merlin.jpg'
 
 const Portfolio = () => {
   const portfolios = [
@@ -51,20 +52,28 @@ const Portfolio = () => {
     },
     {
       id: 6,
+      src: merlin,
+      projname: "Merlin SaaS",
+      demoLink: "https://merlin-saasnote.vercel.app/",
+      codeLink: "https://github.com/Shubhodeep100/Merlin_SaaS",
+    },
+    {
+      id: 7,
       src: customer,
       projname: "Customer Dashboard",
       demoLink: "https://customer-dashboard-971.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
     },
+
     {
-      id: 7,
+      id: 8,
       src: redux,
       projname: "REDUX Food Store",
       demoLink: "https://redux-ecommerce.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
     },
     {
-      id: 8,
+      id: 9,
       src: shoper,
       projname: "Shopperz",
       demoLink: "https://shopping-api.pages.dev/",
@@ -72,20 +81,20 @@ const Portfolio = () => {
     },
 
     {
-      id: 9,
+      id: 10,
       src: todo,
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
     },
     {
-      id: 10,
+      id: 11,
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
     },
     {
-      id: 11,
+      id: 12,
       src: calblog,
       projname: "Calendar Blog App",
       demoLink: "https://calender-blog.vercel.app/",
