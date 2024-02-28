@@ -14,25 +14,19 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-10">
-          I possess a robust grasp of the ever-evolving world of web
-          development, navigating the intricate landscape of technologies with
-          finesse. My journey has led me through the fundamental building blocks
-          like HTML and CSS, where I craft the visual aesthetics, and into the
-          dynamic realm of JavaScript, jQuery, and the captivating world of
-          ReactJS. I've danced with TypeScript and explored the enchanting
-          possibilities of Next.js in one of my fully deployed, full-stack
-          projects, breathing life into every line of code.
+          I have a strong understanding of web development, adeptly navigating
+          evolving technologies. From foundational HTML and CSS for visual
+          aesthetics to dynamic JavaScript, jQuery, and ReactJS, I've also
+          worked with TypeScript and Next.js in fully deployed, full-stack
+          projects, infusing life into each line of code.
         </p>
         <br />
         <p className="text-xl">
-          But my curiosity extends beyond the front end; I've delved into the
-          intricate universe of backend technologies. In the realm of Node.js,
-          I've harnessed the power to create efficient, scalable server-side
-          applications. I've orchestrated symphonies of data using PostgreSQL
-          and MongoDB, crafting databases that sing in harmony with my code. My
-          expertise extends to the art of Ajax and seamless API integration,
-          culminating in a working project that brings these technologies
-          together in a mesmerizing display of digital craftsmanship.
+          My curiosity extends to backend technologies where I explore Node.js
+          to build efficient server-side applications. I've worked with
+          PostgreSQL and MongoDB to create harmonious databases, integrating
+          Ajax and APIs seamlessly into projects for a mesmerizing digital
+          experience.
         </p>
       </div>
     </div>
