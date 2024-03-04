@@ -14,8 +14,9 @@ import redux from "../assets/redux.png";
 import graphQL from "../assets/gql.png";
 import jqery from "../assets/jquery.png";
 import jest from "../assets/jest.png";
-import typescript from "../assets/typescript.png"
-import supabase from "../assets/supabase.png"
+import typescript from "../assets/typescript.png";
+import supabase from "../assets/supabase.png";
+import express from "../assets/express.png";
 
 const Experience = () => {
   const techs = [
@@ -51,73 +52,80 @@ const Experience = () => {
       style: "shadow-yellow-500",
     },
     {
-      id: 5,
+      id: 6,
       src: typescript,
       title: "TypeScript",
       style: "shadow-blue-500",
     },
     {
-      id: 6,
+      id: 7,
       src: jqery,
       title: "JQuery",
       style: "shadow-blue-500 icon-bigger",
     },
     {
-      id: 7,
+      id: 8,
       src: react,
       title: "ReactJS",
       style: "shadow-blue-400",
     },
     {
-      id: 8,
+      id: 9,
       src: redux,
       title: "REDUX",
       style: "shadow-violet-700",
     },
     {
-      id: 9,
+      id: 10,
       src: jest,
       title: "Jest",
       style: "shadow-rose-700",
     },
+
     {
-      id: 10,
+      id: 11,
       src: next,
       title: "NextJS",
       style: "shadow-white",
     },
     {
-      id: 11,
+      id: 12,
       src: mongo,
       title: "MongoDB",
       style: "shadow-green-700",
     },
     {
-      id: 12,
+      id: 13,
       src: post,
       title: "PostgreSQL",
-      style: "shadow-blue-700",
+      style: "shadow-blue-500",
     },
     {
-      id: 12,
+      id: 14,
       src: supabase,
       title: "Supabase",
       style: "shadow-green-400",
     },
     {
-      id: 13,
+      id: 15,
       src: node,
       title: "NodeJS",
       style: "shadow-green-500",
     },
     {
-      id: 14,
+      id: 16,
+      src: express,
+      title: "ExpressJS",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 17,
       src: graphQL,
       title: "GraphQL",
       style: "shadow-pink-500",
     },
     {
-      id: 15,
+      id: 18,
       src: github,
       title: "GitHub",
       style: "shadow-gray-200",
