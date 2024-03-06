@@ -5,12 +5,12 @@ import redux from "../assets/port/reduxShop.jpg";
 import shoper from "../assets/port/shopperz.jpg";
 import thread from "../assets/port/threadC.jpg";
 import todo from "../assets/port/todo.jpg";
-import gqlproj from '../assets/port/gqlproj.jpg';
-import customer from '../assets/port/customer.jpg';
-import calblog from '../assets/port/calblog.jpg';
-import netflix from '../assets/port/netflix.jpg';
-import ecom from '../assets/port/ecom.jpg';
-import merlin from '../assets/port/merlin.jpg'
+import gqlproj from "../assets/port/gqlproj.jpg";
+import customer from "../assets/port/customer.jpg";
+import calblog from "../assets/port/calblog.jpg";
+import netflix from "../assets/port/netflix.jpg";
+import ecom from "../assets/port/ecom.jpg";
+import merlin from "../assets/port/merlin.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -116,7 +116,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:pr-0 items-center justify-center">
-          {portfolios.map(({ id, src, projname, demoLink, codeLink }) => (
+          {portfolios.map(({ src, projname, demoLink, codeLink, id }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
