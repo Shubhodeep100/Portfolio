@@ -17,6 +17,7 @@ import jest from "../assets/jest.png";
 import typescript from "../assets/typescript.png";
 import supabase from "../assets/supabase.png";
 import express from "../assets/express.png";
+import socket from "../assets/socket.png";
 
 const Experience = () => {
   const techs = [
@@ -102,30 +103,36 @@ const Experience = () => {
     },
     {
       id: 14,
+      src: socket,
+      title: "Socket.io",
+      style: "shadow-gray-200",
+    },
+    {
+      id: 15,
       src: supabase,
       title: "Supabase",
       style: "shadow-green-400",
     },
     {
-      id: 15,
+      id: 16,
       src: node,
       title: "NodeJS",
       style: "shadow-green-500",
     },
     {
-      id: 16,
+      id: 17,
       src: express,
       title: "ExpressJS",
       style: "shadow-gray-400",
     },
     {
-      id: 17,
+      id: 18,
       src: graphQL,
       title: "GraphQL",
       style: "shadow-pink-500",
     },
     {
-      id: 18,
+      id: 19,
       src: github,
       title: "GitHub",
       style: "shadow-gray-200",

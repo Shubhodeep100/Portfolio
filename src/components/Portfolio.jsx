@@ -11,6 +11,7 @@ import calblog from "../assets/port/calblog.jpg";
 import netflix from "../assets/port/netflix.jpg";
 import ecom from "../assets/port/ecom.jpg";
 import merlin from "../assets/port/merlin.jpg";
+import chatApp from "../assets/port/chatApp.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -30,6 +31,13 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      src: chatApp,
+      projname: "FreakyChatt",
+      demoLink: "https://freakychat.onrender.com/",
+      codeLink: "https://github.com/Shubhodeep100/FreakyChat",
+    },
+    {
+      id: 4,
       src: netflix,
       projname: "Netflix Clone",
       demoLink:
@@ -37,28 +45,28 @@ const Portfolio = () => {
       codeLink: "https://github.com/Shubhodeep100/Netflix_Clone",
     },
     {
-      id: 4,
+      id: 5,
       src: fitclub,
       projname: "Fitclub",
       demoLink: "https://fitclubshubho.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/FitClub",
     },
     {
-      id: 5,
+      id: 6,
       src: dashboard,
       projname: "Business Dashboard",
       demoLink: "https://omoinew-dashboard.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
     },
     {
-      id: 6,
+      id: 7,
       src: merlin,
       projname: "Merlin SaaS",
       demoLink: "https://merlin-saasnote.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Merlin_SaaS",
     },
     {
-      id: 7,
+      id: 8,
       src: customer,
       projname: "Customer Dashboard",
       demoLink: "https://customer-dashboard-971.pages.dev/",
@@ -66,14 +74,14 @@ const Portfolio = () => {
     },
 
     {
-      id: 8,
+      id: 9,
       src: redux,
       projname: "REDUX Food Store",
       demoLink: "https://redux-ecommerce.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
     },
     {
-      id: 9,
+      id: 10,
       src: shoper,
       projname: "Shopperz",
       demoLink: "https://shopping-api.pages.dev/",
@@ -81,20 +89,20 @@ const Portfolio = () => {
     },
 
     {
-      id: 10,
+      id: 11,
       src: todo,
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
     },
     {
-      id: 11,
+      id: 12,
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
     },
     {
-      id: 12,
+      id: 13,
       src: calblog,
       projname: "Calendar Blog App",
       demoLink: "https://calender-blog.vercel.app/",
