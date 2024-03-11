@@ -11,7 +11,7 @@ import calblog from "../assets/port/calblog.jpg";
 import netflix from "../assets/port/netflix.jpg";
 import ecom from "../assets/port/ecom.jpg";
 import merlin from "../assets/port/merlin.jpg";
-import chatApp from "../assets/port/chatApp.jpg";
+import chatapp from "../assets/port/chatapp.jpg"
 
 const Portfolio = () => {
   const portfolios = [
@@ -31,7 +31,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: chatApp,
+      src: chatapp,
       projname: "FreakyChatt",
       demoLink: "https://freakychat.onrender.com/",
       codeLink: "https://github.com/Shubhodeep100/FreakyChat",
