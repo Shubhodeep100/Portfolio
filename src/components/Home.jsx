@@ -2,8 +2,11 @@ import React from "react";
 import HeroImage from "../assets/heroImage.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Home = () => {
+
+  const text = "I'm a Full Stack Developer".split(" ");
   return (
     <div
       name="Home"
@@ -12,7 +15,19 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full mt-20 md:mt-0">
           <h2 className="text-3xl sm:text-7xl font-bold text-white ">
-            I'm a Full Stack Developer
+            {text.map((el, i) => (
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 4,
+                  delay: i / 6,
+                }}
+                key={i}
+              >
+                {el}{" "}
+              </motion.span>
+            ))}
           </h2>
           <p className="text-gray-500 py-4 pr-2 text-lg">
             I have experience with building and designing web applications.
