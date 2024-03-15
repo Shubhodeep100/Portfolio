@@ -1,17 +1,16 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import {HiOutlineMail} from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-
+import gmail from '../assets/navlinks/gmail.png'
+import github from '../assets/navlinks/github.png'
+import linkedin from "../assets/navlinks/linkedin.png";
+import resume from "../assets/navlinks/resume.png";
 
 const SocialLinks = () => {
-
     const links = [
       {
         id: 1,
         child: (
           <>
-            LinkedIn <FaLinkedin size={25} />
+            LinkedIn <img src={linkedin} alt="Linkedin" className="w-9" />
           </>
         ),
         href: "https://www.linkedin.com/in/shubhodeepbanerjee/",
@@ -21,7 +20,7 @@ const SocialLinks = () => {
         id: 2,
         child: (
           <>
-            GitHub <FaGithub size={25} />
+            GitHub <img src={github} alt="Github" className="w-9" />
           </>
         ),
         href: "https://github.com/Shubhodeep100",
@@ -29,23 +28,24 @@ const SocialLinks = () => {
       },
       {
         id: 3,
-        child: <>Mail <HiOutlineMail size={25}/>
-        </>,
+        child: (
+          <>
+            Email <img src={gmail} alt="Email" className="w-7" />
+          </>
+        ),
         href: "mailto:banerjeeshubho98@gmail.com",
-        
       },
       {
         id: 4,
         child: (
           <>
-            Resume <BsFillPersonLinesFill size={25} />
+            Resume <img src={resume} alt="Resume" className="w-7" />
           </>
         ),
         href: "/Shubhodeep_Resume.pdf",
         style: "rounded-br-md",
         download: true,
       },
-      
     ];
 
   return (
@@ -55,14 +55,14 @@ const SocialLinks = () => {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-10 px-4 ml-[-140px] hover:ml-[-10px] hover:rounded-md duration-300 rounded-r-lg bg-gray-500" +
+              "flex items-center w-40 h-10 px-2 pl-4 ml-[-140px] hover:ml-[-10px] hover:rounded-md duration-300 rounded-r-lg bg-gray-500" +
               " " +
               style
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white "
+              className="flex justify-between items-center w-full text-white"
               download={download}
               target="_blank"
               rel="noreferrer"
