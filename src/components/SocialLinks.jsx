@@ -14,7 +14,6 @@ const SocialLinks = () => {
           </>
         ),
         href: "https://www.linkedin.com/in/shubhodeepbanerjee/",
-        style: "rounded-tr-md",
       },
       {
         id: 2,
@@ -24,7 +23,6 @@ const SocialLinks = () => {
           </>
         ),
         href: "https://github.com/Shubhodeep100",
-        style: "rounded-tr-md",
       },
       {
         id: 3,
