@@ -1,9 +1,53 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import gmail from "../assets/navlinks/gmail.png";
+import github from "../assets/navlinks/github.png";
+import linkedin from "../assets/navlinks/linkedin.png";
+import resume from "../assets/navlinks/resume.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+const socials = [
+  {
+    id: 1,
+    child: (
+      <>
+        <img src={linkedin} alt="Linkedin" className="w-9" />
+      </>
+    ),
+    href: "https://www.linkedin.com/in/shubhodeepbanerjee/",
+  },
+  {
+    id: 2,
+    child: (
+      <>
+        <img src={github} alt="Github" className="w-9" />
+      </>
+    ),
+    href: "https://github.com/Shubhodeep100",
+  },
+  {
+    id: 3,
+    child: (
+      <>
+        <img src={gmail} alt="Email" className="w-7" />
+      </>
+    ),
+    href: "mailto:banerjeeshubho98@gmail.com",
+  },
+  {
+    id: 4,
+    child: (
+      <>
+       <img src={resume} alt="Resume" className="w-7" />
+      </>
+    ),
+    href: "/Shubhodeep_Resume.pdf",
+    download: true,
+  },
+];
+
   const links = [
     {
       id: 1,
@@ -51,11 +95,11 @@ const NavBar = () => {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-500 overflow-auto">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 cursor-pointer capitalize py-5 text-4xl"
             >
               <Link
                 onClick={() => setNav(!nav)}
@@ -67,6 +111,29 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          {/*  */}
+          <div className="flex">
+            <ul className="flex space-x-4">
+              {socials.map(({ id, child, href,download }) => (
+                <li
+                  key={id}
+                  className={
+                    "flex items-center rounded-xl p-1 bg-slate-400"
+                  }
+                >
+                  <a
+                    href={href}
+                    className="flex justify-between items-center w-full text-white"
+                    download={download}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {child}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </ul>
       )}
     </div>
