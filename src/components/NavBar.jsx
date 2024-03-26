@@ -8,45 +8,45 @@ import resume from "../assets/navlinks/resume.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-const socials = [
-  {
-    id: 1,
-    child: (
-      <>
-        <img src={linkedin} alt="Linkedin" className="w-9" />
-      </>
-    ),
-    href: "https://www.linkedin.com/in/shubhodeepbanerjee/",
-  },
-  {
-    id: 2,
-    child: (
-      <>
-        <img src={github} alt="Github" className="w-9" />
-      </>
-    ),
-    href: "https://github.com/Shubhodeep100",
-  },
-  {
-    id: 3,
-    child: (
-      <>
-        <img src={gmail} alt="Email" className="w-7" />
-      </>
-    ),
-    href: "mailto:banerjeeshubho98@gmail.com",
-  },
-  {
-    id: 4,
-    child: (
-      <>
-       <img src={resume} alt="Resume" className="w-7" />
-      </>
-    ),
-    href: "/Shubhodeep_Resume.pdf",
-    download: true,
-  },
-];
+  const socials = [
+    {
+      id: 1,
+      child: (
+        <>
+          <img src={linkedin} alt="Linkedin" className="w-9" />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/shubhodeepbanerjee/",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <img src={github} alt="Github" className="w-9" />
+        </>
+      ),
+      href: "https://github.com/Shubhodeep100",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <img src={gmail} alt="Email" className="w-7" />
+        </>
+      ),
+      href: "mailto:banerjeeshubho98@gmail.com",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <img src={resume} alt="Resume" className="w-7" />
+        </>
+      ),
+      href: "/Shubhodeep_Resume.pdf",
+      download: true,
+    },
+  ];
 
   const links = [
     {
@@ -114,12 +114,10 @@ const socials = [
           {/*  */}
           <div className="flex">
             <ul className="flex space-x-4">
-              {socials.map(({ id, child, href,download }) => (
+              {socials.map(({ id, child, href, download }) => (
                 <li
                   key={id}
-                  className={
-                    "flex items-center rounded-xl p-1 bg-slate-400"
-                  }
+                  className={"flex items-center rounded-xl p-1 bg-slate-400"}
                 >
                   <a
                     href={href}
