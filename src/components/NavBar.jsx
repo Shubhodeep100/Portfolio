@@ -111,7 +111,8 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          {/*  */}
+          
+          {/* Social Links */}
           <div className="flex">
             <ul className="flex space-x-4">
               {socials.map(({ id, child, href, download }) => (
