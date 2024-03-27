@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-6 text-center sm:text-start">
+        <p className="sm:text-xl text-base mt-6 text-center sm:text-start">
           I have a strong understanding of web development, adeptly navigating
           evolving technologies. From foundational HTML and CSS for visual
           aesthetics to dynamic JavaScript, jQuery, and ReactJS, I've also
@@ -21,7 +21,7 @@ const About = () => {
           projects, infusing life into each line of code.
         </p>
         <br />
-        <p className="text-xl">
+        <p className="sm:text-xl text-base  text-center sm:text-start">
           My curiosity extends to backend technologies where I explore Node.js
           to build efficient server-side applications. I've worked with
           PostgreSQL and MongoDB to create harmonious databases, integrating
