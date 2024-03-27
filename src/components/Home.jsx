@@ -14,7 +14,7 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full mt-20 md:mt-0">
-          <h2 className="text-3xl sm:text-7xl text-center lg:text-left font-bold text-white ">
+          <h2 className="text-4xl sm:text-7xl text-center lg:text-left font-bold text-white ">
             {text.map((el, i) => (
               <motion.span
                 initial={{ opacity: 0 }}

@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-10">
+        <p className="text-xl mt-6 text-center sm:text-start">
           I have a strong understanding of web development, adeptly navigating
           evolving technologies. From foundational HTML and CSS for visual
           aesthetics to dynamic JavaScript, jQuery, and ReactJS, I've also

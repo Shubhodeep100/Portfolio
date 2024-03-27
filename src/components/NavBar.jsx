@@ -95,7 +95,7 @@ const NavBar = () => {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-500 overflow-auto">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900 overflow-auto">
           {links.map(({ id, link }) => (
             <li
               key={id}
@@ -118,7 +118,7 @@ const NavBar = () => {
               {socials.map(({ id, child, href, download }) => (
                 <li
                   key={id}
-                  className={"flex items-center rounded-xl p-1 bg-slate-400"}
+                  className={"flex items-center rounded-xl p-1 bg-slate-600"}
                 >
                   <a
                     href={href}
