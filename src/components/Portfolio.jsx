@@ -123,7 +123,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt=""
-                className="w-60 h-28 rounded-md duration-200 hover:scale-105"
+                className="w-full h-28 rounded-md duration-200 hover:scale-105"
               />
 
               <p className="flex justify-center pt-2">
