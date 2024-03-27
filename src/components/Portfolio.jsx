@@ -117,44 +117,44 @@ const Portfolio = () => {
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-12 items-center justify-center">
-          {portfolios.map(
-            ({ src, projname, demoLink, codeLink, id }) => (
-              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                <img
-                  src={src}
-                  alt=""
-                  className="w-full sm:h-44 h-36 rounded-md duration-200 hover:scale-105"
-                />
+          {portfolios.map(({ src, projname, demoLink, codeLink, id }) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={src}
+                alt=""
+                className="w-full sm:h-44 h-36 rounded-md duration-200 hover:scale-105"
+              />
 
-                <p className="flex justify-center pt-2">
-                  <span className="border-b-2 border-gray-500 inline-block text-center">
-                    {projname}
-                  </span>
-                </p>
+              <p className="flex justify-center pt-2">
+                <span className="border-b-2 border-gray-500 inline-block text-center">
+                  {projname}
+                </span>
+              </p>
 
-                <div className="flex items-center justify-center">
-                  <a
-                    href={demoLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`w-1/2 px-6 m-4 duration-200 hover:scale-105 ${
-                      projname === "Project Manager" ? "cursor-not-allowed" : ""
-                    }`}
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href={codeLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
-                  >
-                    Code
-                  </a>
-                </div>
+              <div className="flex items-center justify-center">
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`w-1/2 px-6 m-4 duration-200 hover:scale-105 ${
+                    projname === "Project Management System"
+                      ? "cursor-not-allowed"
+                      : ""
+                  }`}
+                >
+                  Demo
+                </a>
+                <a
+                  href={codeLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                >
+                  Code
+                </a>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
