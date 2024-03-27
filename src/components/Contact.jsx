@@ -6,13 +6,13 @@ const Contact = () => {
       name="Contact"
       className="w-full bg-gradient-to-b from-black to-gray-900 p-2 text-white"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto w-full h-full">
-        <div className="pb-8 flex justify-center sm:justify-start">
+      <div className="flex flex-col p-4 justify-center max-w-screen-xl mx-auto w-full h-full">
+        <div className="pb-8 flex justify-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
         </div>
-        <p className="py-6 text-center sm:text-left">
+        <p className="py-6 text-center">
           Submit the form below to get in touch with me
         </p>
 

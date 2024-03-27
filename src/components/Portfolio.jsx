@@ -8,7 +8,6 @@ import todo from "../assets/port/todo.jpg";
 import gqlproj from "../assets/port/gqlproj.jpg";
 import customer from "../assets/port/customer.jpg";
 import calblog from "../assets/port/calblog.jpg";
-// import netflix from "../assets/port/netflix.jpg";
 import ecom from "../assets/port/ecom.jpg";
 import merlin from "../assets/port/merlin.jpg";
 import chatapp from "../assets/port/chatapp.jpg";
@@ -90,7 +89,7 @@ const Portfolio = () => {
     {
       id: 12,
       src: gqlproj,
-      projname: "Project Manager",
+      projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
     },
     {
@@ -107,53 +106,55 @@ const Portfolio = () => {
       name="Projects"
       className="bg-gradient-to-b from-black to-gray-900 w-full text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-3 flex justify-center sm:justify-start">
+      <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-3 flex justify-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
         </div>
-        <p className="py-6 text-xl text-center sm:text-left">
+        <p className="py-6 text-xl text-center">
           Check out some of my work right here
         </p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 items-center justify-center">
-          {portfolios.map(({ src, projname, demoLink, codeLink, id }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="w-full h-28 rounded-md duration-200 hover:scale-105"
-              />
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-12 items-center justify-center">
+          {portfolios.map(
+            ({ src, projname, demoLink, codeLink, id }) => (
+              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                <img
+                  src={src}
+                  alt=""
+                  className="w-full sm:h-44 h-36 rounded-md duration-200 hover:scale-105"
+                />
 
-              <p className="flex justify-center pt-2">
-                <span className="border-b-2 border-gray-500 inline-block text-center">
-                  {projname}
-                </span>
-              </p>
+                <p className="flex justify-center pt-2">
+                  <span className="border-b-2 border-gray-500 inline-block text-center">
+                    {projname}
+                  </span>
+                </p>
 
-              <div className="flex items-center justify-center">
-                <a
-                  href={demoLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`w-1/2 px-6 m-4 duration-200 hover:scale-105 ${
-                    projname === "Project Manager" ? "cursor-not-allowed" : ""
-                  }`}
-                >
-                  Demo
-                </a>
-                <a
-                  href={codeLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
-                >
-                  Code
-                </a>
+                <div className="flex items-center justify-center">
+                  <a
+                    href={demoLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`w-1/2 px-6 m-4 duration-200 hover:scale-105 ${
+                      projname === "Project Manager" ? "cursor-not-allowed" : ""
+                    }`}
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={codeLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>

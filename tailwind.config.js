@@ -5,7 +5,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       signature: ["Great Vibes"],
-    }
+      txt: ["Nunito"],
+    },
   },
   plugins: [],
 };
