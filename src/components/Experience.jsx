@@ -152,16 +152,16 @@ const Experience = () => {
         </div>
         <p className="py-6 text-center sm:text-left">These are the technologies I have worked with</p>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 mx-auto sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 mx-auto">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg p-2 ${style}`}
+              className={`shadow-md flex flex-col justify-between gap-4 hover:scale-105 duration-500 py-2 rounded-lg p-2 ${style}`}
             >
               <img
                 src={src}
                 alt=""
-                className={`w-20 imgsize mx-auto ${
+                className={`w-20 mx-auto ${
                   title === "JQuery"
                     ? "w-20 h-20"
                     : title === "Jest"
@@ -169,7 +169,7 @@ const Experience = () => {
                     : ""
                 }  `}
               />
-              <p className="mt-4 txt">{title}</p>
+              <p className="text-lg">{title}</p>
             </div>
           ))}
         </div>
