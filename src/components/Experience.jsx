@@ -150,22 +150,22 @@ const Experience = () => {
             Experience
           </p>
         </div>
-        <p className="py-6">These are the technologies I have worked with</p>
+        <p className="py-6 text-center sm:text-left">These are the technologies I have worked with</p>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 mx-auto sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg p-2 ${style}`}
             >
               <img
                 src={src}
                 alt=""
                 className={`w-20 imgsize mx-auto ${
                   title === "JQuery"
-                    ? "w-24 h-24"
+                    ? "w-20 h-20"
                     : title === "Jest"
-                    ? "w-24 h-24"
+                    ? "w-20 h-20"
                     : ""
                 }  `}
               />

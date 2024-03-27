@@ -7,12 +7,14 @@ const Contact = () => {
       className="w-full bg-gradient-to-b from-black to-gray-900 p-4 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8 flex justify-center sm:justify-start">
           <p className="text-4xl font-bol inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
+        <p className="py-6 text-center sm:text-left">
+          Submit the form below to get in touch with me
+        </p>
 
         <div className="flex justify-center items-center">
           <form

@@ -36,14 +36,6 @@ const Portfolio = () => {
       demoLink: "https://freakychat.onrender.com/",
       codeLink: "https://github.com/Shubhodeep100/FreakyChat",
     },
-    // {
-    //   id: 4,
-    //   src: netflix,
-    //   projname: "Netflix Clone",
-    //   demoLink:
-    //     "https://vercel.com/shubhodeep100/netflix-clone/3RAeW2RYV2HBPahGKcvPMHMKsS7J",
-    //   codeLink: "https://github.com/Shubhodeep100/Netflix_Clone",
-    // },
     {
       id: 5,
       src: fitclub,
@@ -98,7 +90,7 @@ const Portfolio = () => {
     {
       id: 12,
       src: gqlproj,
-      projname: "Project Management System",
+      projname: "Project Manager",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
     },
     {
@@ -121,9 +113,11 @@ const Portfolio = () => {
             Projects
           </p>
         </div>
-        <p className="py-6 text-xl text-center sm:text-left">Check out some of my work right here</p>
+        <p className="py-6 text-xl text-center sm:text-left">
+          Check out some of my work right here
+        </p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:pr-0 items-center justify-center">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 items-center justify-center">
           {portfolios.map(({ src, projname, demoLink, codeLink, id }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
@@ -131,8 +125,9 @@ const Portfolio = () => {
                 alt=""
                 className="w-60 h-28 rounded-md duration-200 hover:scale-105"
               />
+
               <p className="flex justify-center pt-2">
-                <span className="border-b-2 border-gray-500 inline-block">
+                <span className="border-b-2 border-gray-500 inline-block text-center">
                   {projname}
                 </span>
               </p>
@@ -142,7 +137,9 @@ const Portfolio = () => {
                   href={demoLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                  className={`w-1/2 px-6 m-4 duration-200 hover:scale-105 ${
+                    projname === "Project Manager" ? "cursor-not-allowed" : ""
+                  }`}
                 >
                   Demo
                 </a>
@@ -150,7 +147,7 @@ const Portfolio = () => {
                   href={codeLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6  m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
                 >
                   Code
                 </a>
