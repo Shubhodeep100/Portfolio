@@ -11,7 +11,7 @@ import calblog from "../assets/port/calblog.jpg";
 // import netflix from "../assets/port/netflix.jpg";
 import ecom from "../assets/port/ecom.jpg";
 import merlin from "../assets/port/merlin.jpg";
-import chatapp from "../assets/port/chatapp.jpg"
+import chatapp from "../assets/port/chatapp.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -113,15 +113,15 @@ const Portfolio = () => {
   return (
     <div
       name="Projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white"
+      className="bg-gradient-to-b from-black to-gray-900 w-full text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-3">
+        <div className="pb-3 flex justify-center sm:justify-start">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
-          <p className="py-6 text-xl">Check out some of my work right here</p>
         </div>
+        <p className="py-6 text-xl text-center sm:text-left">Check out some of my work right here</p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:pr-0 items-center justify-center">
           {portfolios.map(({ src, projname, demoLink, codeLink, id }) => (
