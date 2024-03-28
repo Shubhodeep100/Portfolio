@@ -79,7 +79,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-300 hover:text-gray-200"
+            className="px-4 cursor-pointer font-medium text-lg text-gray-500 hover:scale-105 duration-300 hover:text-gray-200"
           >
             <Link to={link} smooth duration={600} className="nav-styled">
               {link}
