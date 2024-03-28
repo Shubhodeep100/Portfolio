@@ -116,13 +116,13 @@ const Portfolio = () => {
           Check out some of my work right here
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-12 items-center justify-center">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-12 items-center justify-center">
           {portfolios.map(({ src, projname, demoLink, codeLink, id }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="w-full sm:h-36 h-36 rounded-md duration-200 hover:scale-105"
+                className="w-full sm:h-2/3 h-36 rounded-md duration-200 hover:scale-105"
               />
 
               <p className="flex justify-center pt-2">
@@ -131,7 +131,7 @@ const Portfolio = () => {
                 </span>
               </p>
 
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center text-center">
                 <a
                   href={demoLink}
                   target="_blank"

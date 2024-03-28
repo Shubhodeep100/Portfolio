@@ -81,7 +81,7 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-300 hover:text-gray-200"
           >
-            <Link to={link} smooth duration={600} className="a-styled">
+            <Link to={link} smooth duration={600} className="nav-styled">
               {link}
             </Link>
           </li>
@@ -97,12 +97,15 @@ const NavBar = () => {
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900 overflow-auto">
           {links.map(({ id, link }) => (
-            <li key={id} className="px-4 cursor-pointer capitalize text-4xl">
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize text-4xl py-2"
+            >
               <Link
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth
-                duration={500} 
+                duration={500}
               >
                 {link}
               </Link>
@@ -110,7 +113,7 @@ const NavBar = () => {
           ))}
 
           {/* Social Links */}
-          <div className="flex">
+          <div className="flex pt-3">
             <ul className="flex space-x-2">
               {socials.map(({ id, child, href, download }) => (
                 <li
