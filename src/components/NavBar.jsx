@@ -5,6 +5,8 @@ import gmail from "../assets/navlinks/gmail.png";
 import github from "../assets/navlinks/github.png";
 import linkedin from "../assets/navlinks/linkedin.png";
 import resume from "../assets/navlinks/resume.png";
+// import AnimatedLink from "./AnimatedLink";
+import { AnimatePresence, motion } from "framer-motion";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -70,6 +72,43 @@ const NavBar = () => {
       link: "Contact",
     },
   ];
+
+  const menuVars = {
+    initial: {
+      scaleY: 0,
+    },
+    animate: {
+      scaleY: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.12, 0, 0.39, 0],
+      },
+    },
+    exit: {
+      scaleY: 0,
+      transition: {
+        delay: 0.5,
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+  // const containerVars = {
+  //   initial: {
+  //     transition: {
+  //       staggerChildren: 0.09,
+  //       staggerDirection: -1,
+  //     },
+  //   },
+  //   open: {
+  //     transition: {
+  //       delayChildren: 0.3,
+  //       staggerChildren: 0.09,
+  //       staggerDirection: 1,
+  //     },
+  //   },
+  // };
+
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed z-30 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60">
       <div>
@@ -94,47 +133,62 @@ const NavBar = () => {
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900 overflow-auto">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize text-4xl py-4"
-            >
-              <Link
-                onClick={() => setNav(!nav)}
-                to={link}
-                smooth
-                duration={500}
-              >
-                {link}
-              </Link>
-            </li>
-          ))}
-
-          {/* Social Links */}
-          <div className="flex pt-3">
-            <ul className="flex space-x-2">
-              {socials.map(({ id, child, href, download }) => (
+      <AnimatePresence>
+        {nav && (
+          <motion.div
+            variants={menuVars}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="fixed left-0 top-0 w-full h-screen origin-top bg-yellow-400 text-white p-10"
+          >
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900 overflow-auto">
+              {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className={"flex items-center rounded-xl p-1 bg-slate-600"}
+                  className="px-4 cursor-pointer capitalize text-4xl py-4"
                 >
-                  <a
-                    href={href}
-                    className="flex justify-between items-center w-full text-white"
-                    download={download}
-                    target="_blank"
-                    rel="noreferrer"
+                  <Link
+                    onClick={() => setNav(!nav)}
+                    to={link}
+                    smooth
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-in"
+                    data-aos-duration="700"
                   >
-                    {child}
-                  </a>
+                    {link}
+                  </Link>
                 </li>
               ))}
+
+              {/* Social Links */}
+              <div className="flex pt-3">
+                <ul className="flex space-x-2">
+                  {socials.map(({ id, child, href, download }) => (
+                    <li
+                      key={id}
+                      className="flex items-center rounded-xl p-1 bg-slate-600"
+                      data-aos="fade-up"
+                      data-aos-easing="ease-in"
+                      data-aos-duration="700"
+                    >
+                      <a
+                        href={href}
+                        className="flex justify-between items-center w-full text-white"
+                        download={download}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {child}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </ul>
-          </div>
-        </ul>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Portfolio = () => {
       projname: "Threads Clone",
       demoLink: "https://threads-app-lac-tau.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Threads_App",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 2,
@@ -122,7 +122,7 @@ const Portfolio = () => {
         <div
           className="pb-3 flex justify-center"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="500"
           data-aos-easing="ease-in"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
