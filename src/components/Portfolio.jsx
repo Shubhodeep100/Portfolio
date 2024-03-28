@@ -106,7 +106,14 @@ const Portfolio = () => {
       name="Projects"
       className="bg-gradient-to-b from-black to-gray-900 w-full text-white"
     >
-      <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div
+        className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="pb-3 flex justify-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects

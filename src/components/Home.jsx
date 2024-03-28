@@ -48,20 +48,18 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        {/* <motion.div
-          initial={{ right: "-5rem" }}
-          whileInView={{ right: "1rem" }}
-          transition={transition}
-          className="absolute"
-        > */}
-        <div>
+
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-once="false"
+        >
           <img
             src={HeroImage}
             alt="Myprofile"
             className="rounded-3xl mx-auto w-3/5 md:w-4/5 shadow-white"
           />
         </div>
-        {/* </motion.div> */}
       </div>
     </div>
   );

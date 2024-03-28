@@ -6,7 +6,14 @@ const Contact = () => {
       name="Contact"
       className="w-full bg-gradient-to-b from-black to-gray-900 p-2 text-white"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-xl mx-auto w-full h-full">
+      <div
+        className="flex flex-col p-4 justify-center max-w-screen-xl mx-auto w-full h-full"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="pb-8 flex justify-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
