@@ -169,18 +169,18 @@ const Experience = () => {
             Experience
           </p>
         </div>
-        <p className="py-6 text-center text-xl">
+        <p className="py-6 text-center text-xl" >
           These are the technologies I have worked with
         </p>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-5 sm:gap-8 text-center py-4">
-          {techs.map(({ id, src, title, style, dataAos, duration }) => (
+          {techs.map(({ id, src, title, style, dataAos }) => (
             <div
               key={id}
               className={`shadow-md flex flex-col justify-between gap-4 py-2 rounded-lg p-2 ${style}`}
               data-aos={dataAos}
               data-aos-once="false"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <img
                 src={src}
