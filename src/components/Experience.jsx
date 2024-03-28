@@ -26,7 +26,7 @@ const Experience = () => {
       src: html,
       title: "HTML",
       style: "shadow-orange-500",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
     {
       id: 2,
@@ -41,14 +41,14 @@ const Experience = () => {
       src: tailcss,
       title: "Tailwind CSS",
       style: "shadow-sky-400",
-      dataAos: "fade-left",
+      dataAos: "zoom-out",
     },
     {
       id: 4,
       src: boot,
       title: "Bootstrap",
       style: "shadow-violet-500",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
     {
       id: 5,
@@ -62,14 +62,14 @@ const Experience = () => {
       src: typescript,
       title: "TypeScript",
       style: "shadow-blue-500",
-      dataAos: "fade-left",
+      dataAos: "zoom-out",
     },
     {
       id: 7,
       src: jqery,
       title: "JQuery",
       style: "shadow-blue-500 icon-bigger",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
     {
       id: 8,
@@ -83,14 +83,14 @@ const Experience = () => {
       src: redux,
       title: "REDUX",
       style: "shadow-violet-700",
-      dataAos: "fade-left",
+      dataAos: "zoom-out",
     },
     {
       id: 10,
       src: jest,
       title: "Jest",
       style: "shadow-rose-700",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
 
     {
@@ -105,14 +105,14 @@ const Experience = () => {
       src: mongo,
       title: "MongoDB",
       style: "shadow-green-700",
-      dataAos: "fade-left",
+      dataAos: "zoom-out",
     },
     {
       id: 13,
       src: post,
       title: "PostgreSQL",
       style: "shadow-blue-500",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
     {
       id: 14,
@@ -126,14 +126,14 @@ const Experience = () => {
       src: supabase,
       title: "Supabase",
       style: "shadow-green-400",
-      dataAos: "fade-left",
+      dataAos: "zoom-out",
     },
     {
       id: 16,
       src: node,
       title: "NodeJS",
       style: "shadow-green-500",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
     {
       id: 17,
@@ -147,14 +147,14 @@ const Experience = () => {
       src: graphQL,
       title: "GraphQL",
       style: "shadow-pink-500 hover:",
-      dataAos: "fade-left",
+      dataAos: "zoom-out",
     },
     {
       id: 19,
       src: github,
       title: "GitHub",
       style: "shadow-gray-200",
-      dataAos: "fade-right",
+      dataAos: "zoom-out",
     },
   ];
 

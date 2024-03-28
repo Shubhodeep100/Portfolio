@@ -20,7 +20,7 @@ const Portfolio = () => {
       projname: "Threads Clone",
       demoLink: "https://threads-app-lac-tau.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Threads_App",
-      dataAos: "fade-right",
+       dataAos: "zoom-in",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const Portfolio = () => {
       projname: "NEXT Ecommerce",
       demoLink: "https://next-ecommerce-shop-rho.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/NEXT-EcommerceShop",
-      dataAos: "fade-left",
+       dataAos: "zoom-in",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const Portfolio = () => {
       projname: "FreakyChatt",
       demoLink: "https://freakychat.onrender.com/",
       codeLink: "https://github.com/Shubhodeep100/FreakyChat",
-      dataAos: "fade-right",
+       dataAos: "zoom-in",
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const Portfolio = () => {
       projname: "Fitclub",
       demoLink: "https://fitclubshubho.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/FitClub",
-      dataAos: "fade-left",
+       dataAos: "zoom-in",
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ const Portfolio = () => {
       projname: "Business Dashboard",
       demoLink: "https://omoinew-dashboard.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
-      dataAos: "fade-right",
+       dataAos: "zoom-in",
     },
     {
       id: 6,
@@ -60,7 +60,7 @@ const Portfolio = () => {
       projname: "Merlin SaaS",
       demoLink: "https://merlin-saasnote.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Merlin_SaaS",
-      dataAos: "fade-left",
+       dataAos: "zoom-in",
     },
     {
       id: 7,
@@ -68,7 +68,7 @@ const Portfolio = () => {
       projname: "Customer Dashboard",
       demoLink: "https://customer-dashboard-971.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
-      dataAos: "fade-right",
+       dataAos: "zoom-in",
     },
 
     {
@@ -77,7 +77,7 @@ const Portfolio = () => {
       projname: "REDUX Food Store",
       demoLink: "https://redux-ecommerce.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
-      dataAos: "fade-left",
+       dataAos: "zoom-in",
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ const Portfolio = () => {
       projname: "Shopperz",
       demoLink: "https://shopping-api.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Shoperz",
-      dataAos: "fade-right",
+       dataAos: "zoom-in",
     },
 
     {
@@ -94,14 +94,14 @@ const Portfolio = () => {
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
-      dataAos: "fade-left",
+       dataAos: "zoom-in",
     },
     {
       id: 11,
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
-      dataAos: "fade-right",
+       dataAos: "zoom-in",
     },
     {
       id: 12,
@@ -109,7 +109,7 @@ const Portfolio = () => {
       projname: "Calendar Blog App",
       demoLink: "https://calender-blog.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/CalenderBlog",
-      dataAos: "fade-left",
+      dataAos: "zoom-in",
     },
   ];
 
@@ -122,7 +122,7 @@ const Portfolio = () => {
         <div
           className="pb-3 flex justify-center"
           data-aos="fade-up"
-          data-aos-duration="500"
+          data-aos-duration="1500"
           data-aos-easing="ease-in"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
@@ -146,7 +146,7 @@ const Portfolio = () => {
                 key={id}
                 className="shadow-md shadow-gray-600 rounded-lg"
                 data-aos={dataAos}
-                data-aos-duration="900"
+                data-aos-duration="500"
                 data-aos-easing="ease-in"
                 data-aos-once="false"
               >

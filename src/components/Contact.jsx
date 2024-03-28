@@ -9,7 +9,7 @@ const Contact = () => {
       <div
         className="flex flex-col p-4 justify-center max-w-screen-xl mx-auto w-full h-full"
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
