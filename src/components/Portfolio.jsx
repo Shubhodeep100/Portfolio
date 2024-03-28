@@ -122,7 +122,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt=""
-                className="w-full sm:h-44 h-36 rounded-md duration-200 hover:scale-105"
+                className="w-full sm:h-36 h-36 rounded-md duration-200 hover:scale-105"
               />
 
               <p className="flex justify-center pt-2">
@@ -136,7 +136,7 @@ const Portfolio = () => {
                   href={demoLink}
                   target="_blank"
                   rel="noreferrer"
-                  className={`w-1/2 px-6 m-4 duration-200 hover:scale-105 ${
+                  className={`w-1/2 px-6 a-styled m-4 duration-200 hover:scale-105 ${
                     projname === "Project Management System"
                       ? "cursor-not-allowed"
                       : ""
@@ -148,7 +148,7 @@ const Portfolio = () => {
                   href={codeLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105 a-styled"
                 >
                   Code
                 </a>

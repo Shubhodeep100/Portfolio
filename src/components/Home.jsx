@@ -5,16 +5,16 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Home = () => {
-
+  // const transition = { type: "spring", duration: 3 };
   const text = "I'm a Full Stack Developer".split(" ");
   return (
     <div
       name="Home"
       className="w-full bg-gradient-to-b from-black to-gray-900 text-white md:h-screen"
     >
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full mt-20 md:mt-0">
-          <h2 className="text-4xl sm:text-7xl text-center lg:text-left font-bold text-white ">
+      <div className="max-w-screen-xl pt-20 sm:pt-10 md:pt-10 mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row">
+        <div className="flex flex-col justify-center h-full max-w-screen-md">
+          <h2 className="text-4xl sm:text-7xl text-center lg:text-left md:text-left font-bold text-white ">
             {text.map((el, i) => (
               <motion.span
                 initial={{ opacity: 0 }}
@@ -48,13 +48,20 @@ const Home = () => {
             </Link>
           </div>
         </div>
+        {/* <motion.div
+          initial={{ right: "-5rem" }}
+          whileInView={{ right: "1rem" }}
+          transition={transition}
+          className="absolute"
+        > */}
         <div>
           <img
             src={HeroImage}
             alt="Myprofile"
-            className="rounded-3xl mx-auto w-2/3 md:w-full shadow-white "
+            className="rounded-3xl mx-auto w-3/5 md:w-4/5 shadow-white"
           />
         </div>
+        {/* </motion.div> */}
       </div>
     </div>
   );
