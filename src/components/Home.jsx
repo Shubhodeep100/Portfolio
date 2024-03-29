@@ -53,11 +53,16 @@ const Home = () => {
           data-aos="zoom-in"
           data-aos-duration="1500"
           data-aos-once="false"
+          className="p-1 md:w-3/5"
         >
+          {/*  */}
+
+          {/*  */}
+
           <img
             src={HeroImage}
             alt="Myprofile"
-            className="rounded-3xl mx-auto w-3/5 md:w-4/5 shadow-white"
+            className="rounded-3xl mx-auto w-3/5 md:w-4/5 hover:shadow-lg hover:shadow-white duration-300"
           />
         </div>
       </div>

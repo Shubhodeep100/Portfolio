@@ -145,7 +145,7 @@ const Portfolio = () => {
             ({ src, projname, demoLink, codeLink, id, dataAos }) => (
               <div
                 key={id}
-                className="shadow-md shadow-gray-600 rounded-xl"
+                className="rounded-xl shadow-sm duration-300 hover:shadow-slate-400 shadow-slate-500"
                 data-aos={dataAos}
                 data-aos-duration="500"
                 data-aos-easing="ease-in"
@@ -155,20 +155,23 @@ const Portfolio = () => {
                   <img
                     src={src}
                     alt=""
-                    className="w-full sm:h-2/3 h-36 rounded-xl duration-300 hover:scale-105"
+                    className="w-full sm:h-2/3 h-1/3 rounded-xl duration-300 hover:scale-105"
                   />
                 </div>
 
-                <div className="flex items-center flex-col justify-center gap-4">
+                <div className="flex items-center flex-col justify-center gap-3">
                   <p className="flex justify-center pt-2 items-center">
                     <span className="border-b-2 border-gray-500 inline-block text-center">
                       {projname}
                     </span>
                   </p>
 
-                  {/* Info Icon */}
-                  <div className="group p-1.5 rounded-full border-1 border border-white cursor-pointer ">
-                    <IoInformation className="flex items-center text-xl sm:text-2xl group-hover:text-cyan-500" />
+                  <div className="flex items-center justify-center gap-3">
+                    <p className="text-sm font-txt">View More...</p>
+                    {/* Info Icon */}
+                    <div className="group p-0.5 rounded-full border-1 border border-white cursor-pointer ">
+                      <IoInformation className="flex items-center text-xl sm:text-2xl group-hover:text-cyan-500" />
+                    </div>
                   </div>
                 </div>
 
