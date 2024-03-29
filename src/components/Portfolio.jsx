@@ -11,6 +11,7 @@ import calblog from "../assets/port/calblog.jpg";
 import ecom from "../assets/port/ecom.jpg";
 import merlin from "../assets/port/merlin.jpg";
 import chatapp from "../assets/port/chatapp.jpg";
+import { IoInformation } from "react-icons/io5";
 
 const Portfolio = () => {
   const portfolios = [
@@ -28,7 +29,7 @@ const Portfolio = () => {
       projname: "NEXT Ecommerce",
       demoLink: "https://next-ecommerce-shop-rho.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/NEXT-EcommerceShop",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 3,
@@ -36,7 +37,7 @@ const Portfolio = () => {
       projname: "FreakyChatt",
       demoLink: "https://freakychat.onrender.com/",
       codeLink: "https://github.com/Shubhodeep100/FreakyChat",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 4,
@@ -44,7 +45,7 @@ const Portfolio = () => {
       projname: "Fitclub",
       demoLink: "https://fitclubshubho.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/FitClub",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 5,
@@ -52,7 +53,7 @@ const Portfolio = () => {
       projname: "Business Dashboard",
       demoLink: "https://omoinew-dashboard.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 6,
@@ -60,7 +61,7 @@ const Portfolio = () => {
       projname: "Merlin SaaS",
       demoLink: "https://merlin-saasnote.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Merlin_SaaS",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 7,
@@ -68,7 +69,7 @@ const Portfolio = () => {
       projname: "Customer Dashboard",
       demoLink: "https://customer-dashboard-971.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
 
     {
@@ -77,7 +78,7 @@ const Portfolio = () => {
       projname: "REDUX Food Store",
       demoLink: "https://redux-ecommerce.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 9,
@@ -85,7 +86,7 @@ const Portfolio = () => {
       projname: "Shopperz",
       demoLink: "https://shopping-api.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Shoperz",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
 
     {
@@ -94,14 +95,14 @@ const Portfolio = () => {
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 11,
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
-       dataAos: "zoom-in",
+      dataAos: "zoom-in",
     },
     {
       id: 12,
@@ -144,23 +145,32 @@ const Portfolio = () => {
             ({ src, projname, demoLink, codeLink, id, dataAos }) => (
               <div
                 key={id}
-                className="shadow-md shadow-gray-600 rounded-lg"
+                className="shadow-md shadow-gray-600 rounded-xl"
                 data-aos={dataAos}
                 data-aos-duration="500"
                 data-aos-easing="ease-in"
                 data-aos-once="false"
               >
-                <img
-                  src={src}
-                  alt=""
-                  className="w-full sm:h-2/3 h-36 rounded-md duration-200 hover:scale-105"
-                />
+                <div className="p-2 overflow-hidden">
+                  <img
+                    src={src}
+                    alt=""
+                    className="w-full sm:h-2/3 h-36 rounded-xl duration-300 hover:scale-105"
+                  />
+                </div>
 
-                <p className="flex justify-center pt-2">
-                  <span className="border-b-2 border-gray-500 inline-block text-center">
-                    {projname}
-                  </span>
-                </p>
+                <div className="flex items-center flex-col justify-center gap-4">
+                  <p className="flex justify-center pt-2 items-center">
+                    <span className="border-b-2 border-gray-500 inline-block text-center">
+                      {projname}
+                    </span>
+                  </p>
+
+                  {/* Info Icon */}
+                  <div className="group p-1.5 rounded-full border-1 border border-white cursor-pointer ">
+                    <IoInformation className="flex items-center text-xl sm:text-2xl group-hover:text-cyan-500" />
+                  </div>
+                </div>
 
                 <div className="flex items-center justify-center text-center">
                   <a
