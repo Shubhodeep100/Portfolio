@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #7c878f;
+}
+
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
@@ -13,7 +17,11 @@
   .shadow-white {
     box-shadow: 5px 5px 8px 1px #696767; /* White box shadow */
   }
+}
 
+.txt-style {
+  text-shadow: -1px -1px 6px var(--background), 3px 1px 0px var(--background),
+    6px 6px 0px #00000055;
 }
 
 .nav-styled {
@@ -21,7 +29,7 @@
   display: inline-block;
   position: relative;
 }
-.nav-styled:after  {    
+.nav-styled:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -33,9 +41,9 @@
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.nav-styled:hover:after { 
-  width: 100%; 
-  left: 0; 
+.nav-styled:hover:after {
+  width: 100%;
+  left: 0;
   border-radius: 20px;
 }
 /*  */
@@ -44,7 +52,7 @@
   display: inline-block;
   position: relative;
 }
-.a-styled:after  {    
+.a-styled:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -56,130 +64,14 @@
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.a-styled:hover:after { 
-  width: 100%; 
-  left: 0; 
+.a-styled:hover:after {
+  width: 100%;
+  left: 0;
   border-radius: 20px;
 }
 
-
-
 @media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
-}
-
-.imgdiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 20px auto;
-  background: white;
-  border-radius: 75px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  transition: 3s box-shadow;
-}
-
-.imgdiv:hover {
-  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
-}
-
-.imgdiv:hover::before, .imgdiv:hover::after {
-  display: block;
-  content: '';
-  position: absolute;
-  /* width: 250px;
-  height: 250px; */
-  background: #FDA8CF;
-  border-radius: 75px;
-  z-index: -1;
-  animation: 1s clockwise infinite;
-}
-
-.imgdiv:hover:after {
-  background: #F3CE5E;
-  animation: 2s counterclockwise infinite;
-}
-
-@keyframes clockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;    
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;    
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;    
-  }
-}
-
-@keyframes counterclockwise {
-  0% {
-    top: -5px;
-    right: 0;
-  }
-  12% {
-    top: -2px;
-    right: 2px;
-  }
-  25% {
-    top: 0;
-    right: 5px;    
-  }
-  37% {
-    top: 2px;
-    right: 2px;
-  }
-  50% {
-    top: 5px;
-    right: 0;    
-  }
-  62% {
-    top: 2px;
-    right: -2px;
-  }
-  75% {
-    top: 0;
-    right: -5px;
-  }
-  87% {
-    top: -2px;
-    right: -2px;
-  }
-  100% {
-    top: -5px;
-    right: 0;    
+  ul {
+    margin-top: 40px;
   }
 }

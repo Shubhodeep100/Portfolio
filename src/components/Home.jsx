@@ -14,13 +14,13 @@ const Home = () => {
     >
       <div className="max-w-screen-xl pt-20 sm:pt-10 md:pt-10 mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full max-w-screen-md">
-          <h2 className="text-4xl sm:text-7xl text-center lg:text-left md:text-left font-bold text-white ">
+          <h2 className="text-4xl sm:text-7xl text-center lg:text-left md:text-left font-bold text-white txt-style">
             {text.map((el, i) => (
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
-                  duration: 4,
+                  duration: 3,
                   delay: i / 6,
                 }}
                 key={i}
