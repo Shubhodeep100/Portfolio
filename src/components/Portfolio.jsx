@@ -140,7 +140,7 @@ const Portfolio = () => {
           Check out some of my work right here
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-0 sm:px-12 items-center justify-center">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-1 sm:px-12 items-center justify-center">
           {portfolios.map(
             ({ src, projname, demoLink, codeLink, id, dataAos }) => (
               <div
