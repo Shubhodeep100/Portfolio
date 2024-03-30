@@ -140,7 +140,7 @@ const Portfolio = () => {
           Check out some of my work right here
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-8 items-center justify-center">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-0 sm:px-12 items-center justify-center">
           {portfolios.map(
             ({ src, projname, demoLink, codeLink, id, dataAos }) => (
               <div
@@ -151,7 +151,7 @@ const Portfolio = () => {
                 data-aos-easing="ease-in"
                 data-aos-once="false"
               >
-                <div className="p-2 overflow-hidden">
+                <div className="m-2 rounded-xl overflow-hidden">
                   <img
                     src={src}
                     alt=""
