@@ -71,7 +71,6 @@ const Portfolio = () => {
       codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
       dataAos: "zoom-in",
     },
-
     {
       id: 8,
       src: redux,
@@ -113,6 +112,7 @@ const Portfolio = () => {
       dataAos: "zoom-in",
     },
   ];
+
 
   return (
     <div
@@ -170,7 +170,10 @@ const Portfolio = () => {
                     <p className="text-sm font-txt">View More...</p>
                     {/* Info Icon */}
                     <div className="group p-0.5 rounded-full border-1 border border-white cursor-pointer ">
-                      <IoInformation className="flex items-center text-xl sm:text-2xl group-hover:text-cyan-500" />
+                      <IoInformation
+                        // onClick={handleClick}
+                        className="flex items-center text-xl sm:text-2xl group-hover:text-cyan-500"
+                      />
                     </div>
                   </div>
                 </div>
