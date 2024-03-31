@@ -166,16 +166,17 @@ const Portfolio = () => {
                     </span>
                   </p>
 
-                  <div className="flex items-center justify-center gap-3">
+                  {/* <div className="flex items-center justify-center gap-3">
                     <p className="text-sm font-txt">View More...</p>
-                    {/* Info Icon */}
+                  
                     <div className="group p-0.5 rounded-full border-1 border border-white cursor-pointer ">
                       <IoInformation
                         // onClick={handleClick}
                         className="flex items-center text-xl sm:text-2xl group-hover:text-cyan-500"
                       />
                     </div>
-                  </div>
+                  </div> */}
+                  
                 </div>
 
                 <div className="flex items-center justify-center text-center">

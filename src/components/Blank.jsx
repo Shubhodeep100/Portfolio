@@ -123,21 +123,20 @@ function Blank() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-slate-300 to-slate-500 text-white h-screen w-full flex justify-center ">
+    <div className="bg-gradient-to-r from-slate-300 to-slate-500 text-white h-screen w-full flex justify-center">
       <div
-        className={`flip-card mt-10 w-2/5 h-2/3 ${isFlipped ? "flipped" : ""}`}
+        className={`flip-card w-full sm:w-2/5 h-2/4 lg:h-2/3 px-3 sm:px-0 ${
+          isFlipped ? "flipped" : ""
+        }`}
         id="card"
       >
-        {/* <div className="shadow-slate-500 rounded-xl shadow-sm"> */}
-
         <div className="flip-card-inner">
-          <div className="flip-card-front bg-gradient-to-b from-black to-gray-900">
-            <p className="text-white text-xs">Front</p>
-            <div className="overflow-hidden mx-1 rounded-xl">
+          <div className="flip-card-front bg-gradient-to-b from-black to-gray-900 p-1.5">
+            <div className="overflow-hidden rounded-xl">
               <img
                 src={chatapp}
                 alt=""
-                className="w-full sm:h-full h-1/3 rounded-xl duration-300 hover:scale-105"
+                className="w-full rounded-xl duration-300 hover:scale-105"
               />
             </div>
             <div className="flex items-center flex-col justify-center gap-3">
@@ -162,12 +161,12 @@ function Blank() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center text-center text-white w-full">
+            <div className="flex items-center justify-center text-center text-white w-full px-2">
               <a
                 href="https://freakychat.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="w-1/2 px-6 a-styled m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 a-styled m-2 duration-200 hover:scale-105"
               >
                 Demo
               </a>
@@ -175,7 +174,7 @@ function Blank() {
                 href="https://github.com/Shubhodeep100/FreakyChat"
                 target="_blank"
                 rel="noreferrer"
-                className="w-1/2 px-6 m-4 duration-200 hover:scale-105 a-styled"
+                className="w-1/2 px-6 m-2 duration-200 hover:scale-105 a-styled"
               >
                 Code
               </a>
@@ -188,8 +187,8 @@ function Blank() {
 
           <div className="flip-card-back">
             <p className="text-lg border-b-2 mb-4">Details</p>
-            <div className="flex flex-col justify-between gap-8">
-              <ul className="custom-bullets item-start text-sm space-y-6 text-start">
+            <div className="flex flex-col justify-between gap-4 sm:gap-9">
+              <ul className="custom-bullets item-start text-xs sm:text-sm space-y-3 sm:space-y-6 text-start">
                 <li className="">
                   Developed a real-time chat application featuring user
                   authentication with SignUp and Login functionalities.
@@ -203,9 +202,20 @@ function Blank() {
                   Tech Stack : ReactJs,TailwindCSS, DaisyUI, Zustand, Node,
                   Express, Socket.Io, MongoDB, JWT Auth
                 </li>
+                {/* <div className="flex flex-row flex-wrap items-center justify-evenly gap-2">
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                </div> */}
               </ul>
-              <div className="flex items-end justify-center">
-                <div className="group p-0.5 rounded-full  border-1 border border-white cursor-pointer">
+              <div className="flex items-start justify-center ">
+                <div className="group p-0.5 rounded-full border-1 border border-white cursor-pointer">
                   <HiArrowUturnLeft
                     onClick={handleClick}
                     className=" sm:text-2xl p-0.5 rounded-full group-hover:text-cyan-500"
