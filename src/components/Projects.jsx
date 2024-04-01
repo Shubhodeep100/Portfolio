@@ -235,9 +235,9 @@ const Blank = () => {
                 // data-aos-easing="ease-in"
                 // data-aos-once="false"
               >
-                <div className="flip-card-inner shadow-sm hover:shadow-slate-400 shadow-slate-500 rounded-xl">
+                <div className="flip-card-inner rounded-xl">
                   {/* Front Card */}
-                  <div className="flip-card-front bg-gradient-to-b from-black to-slate-800 p-1.5">
+                  <div className="flip-card-front shadow-sm border border-gray-600 hover:shadow-slate-400  bg-gradient-to-b from-black to-slate-800 p-1.5">
                     <div className="rounded-xl overflow-hidden w-full h-fit">
                       <img
                         src={src}
@@ -262,7 +262,7 @@ const Blank = () => {
                         <div className="group p-0.5 rounded-full border border-white cursor-pointer ">
                           <IoInformation
                             onClick={() => handleClick(index)}
-                            className="flex items-center text-xl sm:text-2xl text-white group-hover:text-cyan-500"
+                            className="flex items-center text-2xl sm:text-2xl text-white group-hover:text-cyan-500"
                           />
                         </div>
                       </div>
@@ -311,7 +311,7 @@ const Blank = () => {
                       <div className="group p-0.5 rounded-full border-1 border border-white cursor-pointer">
                         <HiArrowUturnLeft
                           onClick={handleClick}
-                          className="text-xl sm:text-3xl p-0.5 rounded-full group-hover:text-cyan-500"
+                          className="text-2xl sm:text-3xl p-0.5 rounded-full group-hover:text-cyan-500"
                         />
                       </div>
                     </div>
