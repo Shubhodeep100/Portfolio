@@ -125,7 +125,7 @@ function Blank() {
   return (
     <div className="bg-gradient-to-r from-slate-300 to-slate-500 text-white h-screen w-full flex justify-center">
       <div
-        className={`flip-card w-full sm:w-2/5 h-2/4 lg:h-2/3 px-3 sm:px-0 ${
+        className={`flip-card w-full sm:w-2/6 h-2/4 lg:h-2/3 px-3 sm:px-0 ${
           isFlipped ? "flipped" : ""
         }`}
         id="card"
@@ -225,9 +225,7 @@ function Blank() {
             </div>
           </div>
         </div>
-        {/* </div> */}
       </div>
-      {/* </div> */}
     </div>
   );
 }
