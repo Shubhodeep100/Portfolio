@@ -65,8 +65,8 @@ const Blank = () => {
       id: 4,
       src: fitclub,
       projname: "Fitclub",
-      demoLink: "https://fitclub-dusky.vercel.app/",
-      codeLink: "https://github.com/Shubhodeep100/FitClub",
+      demoLink: "https://fit-club-orcin.vercel.app/",
+      codeLink: "https://github.com/Shubhodeep100/fitClub",
       dataAos: "zoom-in",
       details: [
         "• Fully Responsive landing page of a Gym Membership website.",
