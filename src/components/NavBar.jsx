@@ -79,7 +79,7 @@ const NavBar = () => {
     animate: {
       scaleY: 1,
       transition: {
-        duration: 0.8,
+        duration: 0.6,
         ease: [0.12, 0, 0.39, 0],
       },
     },
