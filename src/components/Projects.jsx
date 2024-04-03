@@ -58,15 +58,14 @@ const Blank = () => {
         "• Deployed the application on the Render platform, enabling efficient hosting and management of the chat service.",
         "• Test Login :",
         "Username:  Alex",
-        "Password:   123123"
-        
+        "Password:   123123",
       ],
     },
     {
       id: 4,
       src: fitclub,
       projname: "Fitclub",
-      demoLink: "https://fitclubshubho.pages.dev/",
+      demoLink: "https://fitclub-dusky.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/FitClub",
       dataAos: "zoom-in",
       details: [
