@@ -300,7 +300,7 @@ const Blank = () => {
                       Details
                     </p>
                     <div className="flex flex-col justify-between gap-2 sm:gap-10 rounded-lg h-40 md:h-44 lg:h-56 py-3 sm:py-2">
-                      <ul className=" item-start text-xs sm:text-base space-y-3 sm:space-y-3 text-start overflow-y-scroll">
+                      <ul className=" item-start text-base space-y-3 sm:space-y-3 text-start overflow-y-scroll">
                         {details.map((detail, index) => (
                           <li key={index}>{detail}</li>
                         ))}
