@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
   }
-
 }
 
 ::-webkit-scrollbar {
@@ -24,5 +23,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #095f9cab;
 }
-
-

@@ -5,7 +5,6 @@ import gmail from "../assets/navlinks/gmail.png";
 import github from "../assets/navlinks/github.png";
 import linkedin from "../assets/navlinks/linkedin.png";
 import resume from "../assets/navlinks/resume.png";
-// import AnimatedLink from "./AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
 
 const NavBar = () => {
@@ -80,34 +79,18 @@ const NavBar = () => {
     animate: {
       scaleY: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.8,
         ease: [0.12, 0, 0.39, 0],
       },
     },
     exit: {
       scaleY: 0,
       transition: {
-        delay: 0.5,
-        duration: 0.5,
+        duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       },
     },
   };
-  // const containerVars = {
-  //   initial: {
-  //     transition: {
-  //       staggerChildren: 0.09,
-  //       staggerDirection: -1,
-  //     },
-  //   },
-  //   open: {
-  //     transition: {
-  //       delayChildren: 0.3,
-  //       staggerChildren: 0.09,
-  //       staggerDirection: 1,
-  //     },
-  //   },
-  // };
 
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed z-30 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60">
@@ -171,6 +154,7 @@ const NavBar = () => {
                       data-aos="fade-up"
                       data-aos-easing="ease-in"
                       data-aos-duration="700"
+                      data-aos-delay={(id * 200).toString()}
                     >
                       <a
                         href={href}
