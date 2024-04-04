@@ -128,6 +128,7 @@ const Blank = () => {
         "• Has REDUX implementation to manage the Central-Store and the Cart of the orders.",
       ],
     },
+    
     {
       id: 9,
       src: shoper,
