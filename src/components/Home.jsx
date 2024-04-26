@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  // const transition = { type: "spring", duration: 3 };
   const text = "I'm a Full Stack Developer".split(" ");
   return (
     <div
@@ -29,6 +28,7 @@ const Home = () => {
               </motion.span>
             ))}
           </h2>
+
           <p className="text-gray-500 py-4 pr-2 text-lg text-center lg:text-left">
             I have experience with building and designing web applications.
             Currently, I love to work on web applications using technologies

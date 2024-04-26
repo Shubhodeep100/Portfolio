@@ -110,7 +110,6 @@
   backface-visibility: hidden;
   border-radius: 20px;
   padding: 15px;
-  background-color: rgb(23, 25, 27);
   color: white;
   transform: rotateY(180deg);
 }

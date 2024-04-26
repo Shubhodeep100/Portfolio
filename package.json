@@ -9,6 +9,7 @@
     "aos": "^2.3.4",
     "framer-motion": "^11.0.12",
     "jquery": "^3.7.1",
+    "particles.js": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",

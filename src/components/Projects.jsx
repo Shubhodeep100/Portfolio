@@ -128,7 +128,7 @@ const Blank = () => {
         "• Has REDUX implementation to manage the Central-Store and the Cart of the orders.",
       ],
     },
-    
+
     {
       id: 9,
       src: shoper,
@@ -186,7 +186,6 @@ const Blank = () => {
     },
   ];
 
-
   const [flippedCardIndex, setFlippedCardIndex] = useState(null);
 
   const handleClick = (index) => {
@@ -230,10 +229,6 @@ const Blank = () => {
                 className={`flip-card px-1 sm:px-0 ${
                   index === flippedCardIndex ? "flipped" : ""
                 }`}
-                // data-aos={dataAos}
-                // data-aos-duration="500"
-                // data-aos-easing="ease-in"
-                // data-aos-once="false"
               >
                 <div className="flip-card-inner rounded-xl">
                   {/* Front Card */}
@@ -259,11 +254,11 @@ const Blank = () => {
                         </p>
 
                         {/* Flipping Button */}
-                        <div className="group p-0.5 rounded-full border border-white cursor-pointer ">
-                          <IoInformation
-                            onClick={() => handleClick(index)}
-                            className="flex items-center text-2xl sm:text-2xl text-white group-hover:text-cyan-500"
-                          />
+                        <div
+                          className="group p-0.5 rounded-full border border-white cursor-pointer "
+                          onClick={() => handleClick(index)}
+                        >
+                          <IoInformation className="flex items-center text-2xl sm:text-2xl text-white group-hover:text-cyan-500" />
                         </div>
                       </div>
                     </div>
@@ -295,7 +290,7 @@ const Blank = () => {
 
                   {/* Back Card */}
 
-                  <div className="flip-card-back">
+                  <div className="flip-card-back bg-gradient-to-b from-slate-900 to-black border border-gray-600 shadow-sm hover:shadow-slate-400">
                     <p className="text-xl border-b-2 mb-4 font-txt text-slate-300">
                       Details
                     </p>
@@ -308,11 +303,11 @@ const Blank = () => {
                     </div>
 
                     <div className="flex items-start justify-center ">
-                      <div className="group p-0.5 rounded-full border-1 border border-white cursor-pointer">
-                        <HiArrowUturnLeft
-                          onClick={handleClick}
-                          className="text-2xl sm:text-3xl p-0.5 rounded-full group-hover:text-cyan-500"
-                        />
+                      <div
+                        className="group p-0.5 rounded-full border-1 border border-white cursor-pointer"
+                        onClick={handleClick}
+                      >
+                        <HiArrowUturnLeft className="text-2xl sm:text-3xl p-0.5 rounded-full group-hover:text-cyan-500" />
                       </div>
                     </div>
                   </div>
