@@ -74,15 +74,12 @@
   ul {
     margin-top: 40px;
   }
-
-  
 }
 
 /* Card flipp CSS */
 
 .flip-card {
   perspective: 1000px;
-
 }
 
 .flip-card-inner {
@@ -114,17 +111,14 @@
   transform: rotateY(180deg);
 }
 
-
 .flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
 @media screen and (max-width: 768px) {
- 
-  .flip-card-front{
+  .flip-card-front {
     display: flex;
     justify-content: space-between;
   }
 }
-
 

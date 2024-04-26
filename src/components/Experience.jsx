@@ -18,7 +18,9 @@ import typescript from "../assets/typescript.png";
 import supabase from "../assets/supabase.png";
 import express from "../assets/express.png";
 import socket from "../assets/socket.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const Experience = () => {
   const techs = [
     {
