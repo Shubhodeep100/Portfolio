@@ -209,7 +209,7 @@ const Blank = () => {
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-0 sm:px-12 items-center justify-center">
           {portfolios.map(
             (
-              { src, projname, demoLink, codeLink, id, dataAos, details },
+              { src, projname, demoLink, codeLink, id, details },
               index
             ) => (
               <div
