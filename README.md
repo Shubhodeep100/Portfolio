@@ -12,7 +12,7 @@
 •Deployed via Vercel deployments.
 ## Demo
 
-https://portfolio-shubhodeep100.vercel.app/
+[Demo](https://portfolio-shubhodeep100.vercel.app/)
 
 ## Screenshots
 
