@@ -22,7 +22,6 @@ const Blank = () => {
       projname: "Threads Clone",
       demoLink: "https://threads-app-lac-tau.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Threads_App",
-      dataAos: "zoom-in",
       details: [
         "• Fully functional & Responsive Threads clone with users to Login & Sign Up.",
         "• Users can create their threads and other users can comment on their threads.",
@@ -36,7 +35,6 @@ const Blank = () => {
       projname: "NEXT Ecommerce",
       demoLink: "https://next-ecommerce-shop-rho.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/NEXT-EcommerceShop",
-      dataAos: "zoom-in",
       details: [
         "• Full Stack Ecommerce app with all the modern integrated features.",
         "• Integrated Stripe-payment checkout feature for the products.",
@@ -50,7 +48,6 @@ const Blank = () => {
       projname: "FreakyChatt",
       demoLink: "https://freakychat.onrender.com/",
       codeLink: "https://github.com/Shubhodeep100/FreakyChat",
-      dataAos: "zoom-in",
       details: [
         "• Developed a real-time chat application featuring user authentication with SignUp and Login functionalities",
         "• Implemented seamless messaging experience using ReactJS for frontend development, TailwindCSS for design, and MongoDB for data storage.",
@@ -67,7 +64,6 @@ const Blank = () => {
       projname: "Fitclub",
       demoLink: "https://fit-club-orcin.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/fitClub",
-      dataAos: "zoom-in",
       details: [
         "• Fully Responsive landing page of a Gym Membership website.",
         "• Frontend landing page to showcase various plans available for the gym-membership.",
@@ -80,7 +76,6 @@ const Blank = () => {
       projname: "Business Dashboard",
       demoLink: "https://omoinew-dashboard.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Omoi-Dashboard",
-      dataAos: "zoom-in",
       details: [
         "• This is completely responsive dashboard of a business company.",
         "• It shows different statistics of the revenue generated and also calculates a bar graph as per the growth.",
@@ -94,7 +89,6 @@ const Blank = () => {
       projname: "Merlin SaaS",
       demoLink: "https://merlin-saasnote.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/Merlin_SaaS",
-      dataAos: "zoom-in",
       details: [
         "• Developed a secure, multi-platform web application with Next.js integrating Kindie Authentication, Passwordless Authentication, and OAuth (Google and GitHub) for streamlined user access.",
         "• Utilized Supabase Database and Prisma ORM for efficient data management, enabling functionalities like adding, viewing, editing, and deleting notes.",
@@ -108,7 +102,6 @@ const Blank = () => {
       projname: "Customer Dashboard",
       demoLink: "https://customer-dashboard-971.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/CustomerDashboard",
-      dataAos: "zoom-in",
       details: [
         "• This is completely responsive dashboard of a business company. ",
         "• It shows different statistics of the revenue generated and also calculates a bar graph as per the growth. ",
@@ -122,7 +115,6 @@ const Blank = () => {
       projname: "REDUX Food Store",
       demoLink: "https://redux-ecommerce.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Redux_E-Commerce",
-      dataAos: "zoom-in",
       details: [
         "• A Food ordering Frontend app which stores the data of the orders and calculate the Order-totals.",
         "• Has REDUX implementation to manage the Central-Store and the Cart of the orders.",
@@ -135,7 +127,6 @@ const Blank = () => {
       projname: "Shopperz",
       demoLink: "https://shopping-api.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Shoperz",
-      dataAos: "zoom-in",
       details: [
         "• Use ReactJs to make the Frontend of the Shopping store.",
         "• Fetched the data from a fake api service provider",
@@ -149,7 +140,6 @@ const Blank = () => {
       projname: "Todo Application",
       demoLink: "https://to-doapplication.pages.dev/",
       codeLink: "https://github.com/Shubhodeep100/Todo-app",
-      dataAos: "zoom-in",
       details: [
         "• Used ReactJs to build the app.",
         "• Has CRUD operation implemented into it.",
@@ -161,7 +151,6 @@ const Blank = () => {
       src: gqlproj,
       projname: "Project Management System",
       codeLink: "https://github.com/Shubhodeep100/GraphQL-MERN",
-      dataAos: "zoom-in",
       details: [
         "• Fullstack MERN application for managing projects of different clients.",
         "• CRUD functionality implemented on both clients as well as for the projects",
@@ -175,7 +164,6 @@ const Blank = () => {
       projname: "Calendar Blog App",
       demoLink: "https://calender-blog.vercel.app/",
       codeLink: "https://github.com/Shubhodeep100/CalenderBlog",
-      dataAos: "zoom-in",
       details: [
         "• Complete static website of a Calendar Blog.",
         "• Completely responsive.",
