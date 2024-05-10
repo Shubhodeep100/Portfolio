@@ -93,7 +93,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed z-30 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60">
+    <div className="flex justify-between w-full rounded-full items-center h-20 px-4 bg-black text-white fixed z-30 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60">
       <div>
         <h1 className="text-5xl font-signature ml-2">Shubhodeep</h1>
       </div>
